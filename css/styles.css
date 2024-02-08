@@ -175,6 +175,14 @@ footer section#LeftFooter ul li a {
   color: white;
   text-decoration: none;
 }
+footer section#LeftFooter ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer section#LeftFooter ul li a:visited {
+  color: white;
+  text-decoration: none;
+}
 footer form {
   display: flex;
   flex-direction: column;
