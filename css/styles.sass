@@ -48,7 +48,9 @@ h4
   font-size: $font-size-h4
 
 p,
-a
+a,
+label,
+input
   font-size: $font-size-p
 
 /* HEADER */
@@ -180,21 +182,24 @@ footer
     width: calc(100% / 3)
     display: flex
     flex-direction: column
-  section#RightFooter 
-    h4
-      display: inline-block
-      word-break: break-all
-  section#RightFooter
+  
+  section#LeftFooter
     ul 
+      padding-left: 0
       li
         list-style-type: none
-        padding-left: 0
-  section#RightFooter 
-    ul 
-      li 
         a
           color: white
           text-decoration: none
+
+  form
+    display: flex
+    flex-direction: column
+    label
+      padding-bottom: 10px
+    #Button
+      width: 200px
+      text-align: center
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px)

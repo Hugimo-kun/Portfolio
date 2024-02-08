@@ -22,7 +22,9 @@ h4 {
 }
 
 p,
-a {
+a,
+label,
+input {
   font-size: 20px;
 }
 
@@ -163,17 +165,26 @@ footer section {
   display: flex;
   flex-direction: column;
 }
-footer section#RightFooter h4 {
-  display: inline-block;
-  word-break: break-all;
-}
-footer section#RightFooter ul li {
-  list-style-type: none;
+footer section#LeftFooter ul {
   padding-left: 0;
 }
-footer section#RightFooter ul li a {
+footer section#LeftFooter ul li {
+  list-style-type: none;
+}
+footer section#LeftFooter ul li a {
   color: white;
   text-decoration: none;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+footer form label {
+  padding-bottom: 10px;
+}
+footer form #Button {
+  width: 200px;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
