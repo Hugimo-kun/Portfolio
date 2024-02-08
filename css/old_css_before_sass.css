@@ -1,0 +1,253 @@
+body {
+  background-image: linear-gradient(rgb(31, 7, 110), rgb(20, 2, 40));
+  color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+}
+
+/* HEADER */
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  height: 75px;
+  width: 100%;
+}
+
+header img {
+  width: 5em;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+header section {
+  width: 100%;
+  margin-top: -5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* HOME */
+
+main #Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+  margin-top: -130px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+main #Home h2 {
+  font-size: 40px;
+}
+
+main #Home img {
+  width: 30%;
+}
+
+/* Experiences */
+
+main #Experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+  margin-top: -110px;
+  margin-bottom: 100px;
+}
+
+main #Experiences section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main #Experiences h2 {
+  padding-bottom: 40px;
+}
+
+main #Experiences section div {
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  width: 20%;
+  border-radius: 15px;
+}
+
+main #Experiences section div:nth-child(1) {
+  border: 3px solid white;
+}
+
+main #Experiences section div:nth-child(2) {
+  border: 3px solid rgb(0, 153, 255);
+}
+
+main #Experiences section div:nth-child(3) {
+  border: 3px solid rgb(255, 0, 0);
+}
+
+/* PROJECTS */
+
+main #Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+main #Projects #AllProjects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: first baseline;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+
+main #Projects #AllProjects section {
+  width: 380px;
+}
+
+main #Projects #AllProjects section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main #Projects #AllProjects section #Date {
+  font-style: italic;
+}
+
+/* STAGE */
+
+main #Stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+main #Stage img {
+  width: 80%;
+  padding: 30px 0;
+}
+
+main #Stage #MoneyStage {
+  color: #15ff00;
+  font-weight: bold;
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer section {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+footer #RightFooter h4 {
+  display: inline-block;
+  word-break: break-all;
+}
+
+footer #RightFooter ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer #RightFooter a {
+  color: white;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  a {
+    font-size: 17px;
+  }
+
+  /* TEMPORAIRE */
+
+  header section a {
+    font-size: 10px;
+  }
+
+  main #Home h2 {
+    font-size: 30px;
+  }
+
+  main #Experiences section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #Experiences section div {
+    width: 30%;
+  }
+}
