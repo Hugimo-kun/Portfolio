@@ -25,6 +25,10 @@ p {
   font-size: 20px;
 }
 
+a {
+  font-size: 20px;
+}
+
 /* HEADER */
 
 header {
@@ -36,6 +40,7 @@ header {
   top: 0;
   padding: 15px 0;
   height: 75px;
+  width: 100%;
 }
 
 header img {
@@ -88,7 +93,8 @@ main #Experiences {
 
 main #Experiences section {
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main #Experiences h2 {
@@ -98,25 +104,8 @@ main #Experiences h2 {
 main #Experiences section div {
   padding: 30px;
   text-align: center;
-}
-
-main #Experiences section #Studies {
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
-}
-
-main #Experiences section #Front {
-  border-top: 3px solid white;
-  border-right: 3px solid white;
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
-}
-
-main #Experiences section #Back {
-  border-top: 3px solid white;
-  border-right: 3px solid white;
-  border-bottom: 3px solid white;
+  border: 3px solid white;
+  width: 20%;
 }
 
 /* PROJECTS */
@@ -125,21 +114,88 @@ main #Projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -20px;
-  padding-top: 20px;
+  margin-top: -100px;
+  padding-top: 100px;
+  flex-wrap: wrap;
 }
 
-main #Projects section {
+main #Projects #AllProjects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: first baseline;
+  flex-wrap: wrap;
   text-align: center;
-  max-width: calc(100% / 3);
+  width: 100%;
 }
 
-main #Projects section img {
-  width: 250px;
-  height: 165px;
+main #Projects #AllProjects section {
+  width: 380px;
+}
+
+main #Projects #AllProjects section img {
+  width: 380px;
+  height: 250px;
   object-fit: cover;
 }
 
-main #Projects section #Date {
+main #Projects #AllProjects section #Date {
   font-style: italic;
+}
+
+/* STAGE */
+
+main #Stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+main #Stage img {
+  width: 900px;
+  padding: 30px 0;
+}
+
+main #Stage #MoneyStage {
+  color: #15ff00;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer section {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+footer #RightFooter h4 {
+  display: inline-block;
+  word-break: break-all;
+}
+
+footer #RightFooter ul {
+  list-style-type: none;
+}
+
+footer #RightFooter a {
+  color: white;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  main #Experiences section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
