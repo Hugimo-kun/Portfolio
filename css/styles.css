@@ -94,7 +94,7 @@ main #Experiences section div {
   border-radius: 15px;
 }
 main #Experiences section div:nth-child(1) {
-  border: 3px solid white;
+  border: 3px solid #15ff00;
 }
 main #Experiences section div:nth-child(2) {
   border: 3px solid #0099ff;
