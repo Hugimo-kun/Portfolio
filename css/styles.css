@@ -49,6 +49,9 @@ header nav {
   display: flex;
   justify-content: center;
 }
+header div.HeaderHamburgerBar {
+  display: none;
+}
 
 /* HOME */
 main #Home {
@@ -215,8 +218,11 @@ footer form #Button {
   }
 
   /* TEMPORAIRE */
-  header section a {
-    font-size: 10px;
+  header nav {
+    display: none;
+  }
+  header div.HeaderHamburgerBar {
+    display: block;
   }
 
   main #Home h2 {

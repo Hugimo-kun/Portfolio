@@ -74,6 +74,9 @@ header
     display: flex
     justify-content: center
 
+  div.HeaderHamburgerBar
+    display: none
+
 /* HOME */
 main #Home
   display: flex
@@ -223,8 +226,11 @@ footer
     font-size: 17px
 
   /* TEMPORAIRE */
-  header section a
-    font-size: 10px
+  header 
+    nav
+      display: none
+    div.HeaderHamburgerBar
+      display: block
 
   main #Home h2
     font-size: 30px
