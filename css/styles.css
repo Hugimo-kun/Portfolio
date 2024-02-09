@@ -70,6 +70,7 @@ main #Home h2 {
 }
 main #Home img {
   width: 30%;
+  border-radius: 50%;
 }
 
 /* Experiences */
@@ -144,7 +145,7 @@ main #Stage {
   text-align: center;
 }
 main #Stage img {
-  width: 80%;
+  width: 45%;
   padding: 30px 0;
 }
 main #Stage #MoneyStage {
