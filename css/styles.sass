@@ -74,9 +74,6 @@ header
     display: flex
     justify-content: center
 
-  div.HeaderHamburgerBar
-    display: none
-
 /* HOME */
 main #Home
   display: flex
@@ -147,7 +144,7 @@ main #Projects
       width: 380px
 
       img
-        width: 100%
+        width: 90%
         object-fit: cover
 
       #Date
@@ -204,6 +201,8 @@ footer
     flex-direction: column
     label
       padding-bottom: 10px
+    input, textarea
+      max-width: 90%
     #Button
       width: 200px
       text-align: center
@@ -226,11 +225,11 @@ footer
     font-size: 17px
 
   /* TEMPORAIRE */
-  header 
+  header
+    display: flex
+    justify-content: space-between
     nav
       display: none
-    div.HeaderHamburgerBar
-      display: block
 
   main #Home h2
     font-size: 30px
@@ -241,3 +240,6 @@ footer
 
   main #Experiences section div
     width: 30%
+
+  main #Projects img
+    width: 90%

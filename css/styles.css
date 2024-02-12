@@ -49,9 +49,6 @@ header nav {
   display: flex;
   justify-content: center;
 }
-header div.HeaderHamburgerBar {
-  display: none;
-}
 
 /* HOME */
 main #Home {
@@ -127,7 +124,7 @@ main #Projects #AllProjects section {
   width: 380px;
 }
 main #Projects #AllProjects section img {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
 }
 main #Projects #AllProjects section #Date {
@@ -190,6 +187,9 @@ footer form {
 footer form label {
   padding-bottom: 10px;
 }
+footer form input, footer form textarea {
+  max-width: 90%;
+}
 footer form #Button {
   width: 200px;
   text-align: center;
@@ -218,11 +218,12 @@ footer form #Button {
   }
 
   /* TEMPORAIRE */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
   header nav {
     display: none;
-  }
-  header div.HeaderHamburgerBar {
-    display: block;
   }
 
   main #Home h2 {
@@ -236,5 +237,9 @@ footer form #Button {
 
   main #Experiences section div {
     width: 30%;
+  }
+
+  main #Projects img {
+    width: 90%;
   }
 }
