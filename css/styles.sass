@@ -74,24 +74,32 @@ header
     display: flex
     justify-content: center
 
-/* HOME */
-main #Home
-  display: flex
-  flex-direction: column
-  align-items: center
-  padding-top: $padding-top-home
-  margin-top: $margin-top-home
-  margin-bottom: $margin-bottom-home
-  width: 100%
-  text-align: center
-  h2
-    font-size: 40px
-  img
-    width: 30%
-    border-radius: 50%
+  /* ASIDE */
+main
+  aside
+    display: none
+    background-color: $header-bg-color
+  
+  /* HOME */
+main 
+  #Home
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: $padding-top-home
+    margin-top: $margin-top-home
+    margin-bottom: $margin-bottom-home
+    width: 100%
+    text-align: center
+    h2
+      font-size: 40px
+    img
+      width: 30%
+      border-radius: 50%
 
 /* Experiences */
-main #Experiences
+main 
+  #Experiences
   display: flex
   flex-direction: column
   align-items: center
@@ -218,10 +226,7 @@ footer
   h3
     font-size: 23px
 
-  p
-    font-size: 17px
-
-  a
+  p, a
     font-size: 17px
 
   /* TEMPORAIRE */
@@ -231,19 +236,22 @@ footer
     nav
       display: none
 
-  main 
-    #Home 
+  main
+    aside
+      
+    #Home
+      img
+        width: 75%
       h2
-    font-size: 30px
+        font-size: 30px
     #Experiences 
       section
         flex-direction: column
         align-items: center
         div
           width: 30%
-    #Projects 
+    #Projects, #Stage
       img
-        width: 90%
-    #Stage
-      img
-        width: 90%
+        width: 80%
+      p
+        margin: 5% 10%

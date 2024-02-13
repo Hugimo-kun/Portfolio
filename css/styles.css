@@ -33,6 +33,7 @@ header {
   padding: 15px 0;
   height: 75px;
   width: 100%;
+  /* ASIDE */
 }
 header svg {
   width: 5em;
@@ -50,7 +51,14 @@ header nav {
   justify-content: center;
 }
 
-/* HOME */
+main {
+  /* HOME */
+}
+main aside {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 main #Home {
   display: flex;
   flex-direction: column;
@@ -70,7 +78,7 @@ main #Home img {
 }
 
 /* Experiences */
-main #Experiences {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,28 +86,28 @@ main #Experiences {
   margin-top: -110px;
   margin-bottom: 100px;
 }
-main #Experiences section {
+main section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main #Experiences h2 {
+main h2 {
   padding-bottom: 40px;
 }
-main #Experiences section div {
+main section div {
   padding: 30px;
   margin: 10px;
   text-align: center;
   width: 20%;
   border-radius: 15px;
 }
-main #Experiences section div:nth-child(1) {
+main section div:nth-child(1) {
   border: 3px solid #15ff00;
 }
-main #Experiences section div:nth-child(2) {
+main section div:nth-child(2) {
   border: 3px solid #0099ff;
 }
-main #Experiences section div:nth-child(3) {
+main section div:nth-child(3) {
   border: 3px solid red;
 }
 
@@ -209,11 +217,7 @@ footer form #Button {
     font-size: 23px;
   }
 
-  p {
-    font-size: 17px;
-  }
-
-  a {
+  p, a {
     font-size: 17px;
   }
 
@@ -226,7 +230,10 @@ footer form #Button {
     display: none;
   }
 
-  main {
+  main #Home img {
+    width: 75%;
+  }
+  main #Home h2 {
     font-size: 30px;
   }
   main #Experiences section {
@@ -236,10 +243,10 @@ footer form #Button {
   main #Experiences section div {
     width: 30%;
   }
-  main #Projects img {
-    width: 90%;
+  main #Projects img, main #Stage img {
+    width: 80%;
   }
-  main #Stage img {
-    width: 90%;
+  main #Projects p, main #Stage p {
+    margin: 5% 10%;
   }
 }
