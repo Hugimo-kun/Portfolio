@@ -7,3 +7,11 @@
     hamburger.classList.toggle("is-active");
     // Do something else, like open/close menu
   });
+  function toggleAside() {
+    var x = document.getElementById("aside");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

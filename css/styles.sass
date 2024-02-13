@@ -74,11 +74,6 @@ header
     display: flex
     justify-content: center
 
-  /* ASIDE */
-main
-  aside
-    display: none
-    background-color: $header-bg-color
   
   /* HOME */
 main 
@@ -232,26 +227,58 @@ footer
   /* TEMPORAIRE */
   header
     display: flex
+    width: 100vw
     justify-content: space-between
-    nav
+    #navPC
       display: none
+    
 
-  main
-    aside
-      
-    #Home
-      img
-        width: 75%
-      h2
-        font-size: 30px
-    #Experiences 
-      section
-        flex-direction: column
-        align-items: center
-        div
-          width: 30%
-    #Projects, #Stage
-      img
-        width: 80%
-      p
-        margin: 5% 10%
+
+  /* HOME */ 
+
+  aside
+    display: none
+    background-color: $header-bg-color
+    width: 50%
+    height: 100%
+    margin-top: -5%
+    position: fixed
+    top: 124px
+    right: 0
+
+    #navMobile
+      ul 
+        padding-left: 0
+        li
+          list-style-type: none
+          a
+            color: white
+            text-decoration: none
+            &:hover
+              color: white
+              text-decoration: none
+            &:visited
+              color: white
+              text-decoration: none
+main
+  #Home
+    img
+      width: 75%
+    h2
+      font-size: 30px
+
+  /* EXPERIENCES */
+  #Experiences 
+    section
+      flex-direction: column
+      align-items: center
+      div
+        width: 30%
+
+  /* PROJETS & STAGE */
+
+  #Projects, #Stage
+    img
+      width: 75%
+    p
+      margin: 5% 10%

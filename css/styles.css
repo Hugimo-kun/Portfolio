@@ -33,7 +33,7 @@ header {
   padding: 15px 0;
   height: 75px;
   width: 100%;
-  /* ASIDE */
+  /* HOME */
 }
 header svg {
   width: 5em;
@@ -49,14 +49,6 @@ header nav {
   text-align: center;
   display: flex;
   justify-content: center;
-}
-
-main {
-  /* HOME */
-}
-main aside {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 main #Home {
@@ -224,29 +216,63 @@ footer form #Button {
   /* TEMPORAIRE */
   header {
     display: flex;
+    width: 100vw;
     justify-content: space-between;
   }
-  header nav {
+  header #navPC {
     display: none;
   }
 
-  main #Home img {
-    width: 75%;
+  /* HOME */ 
+  aside {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    height: 100%;
+    margin-top: -5%;
+    position: fixed;
+    top: 124px;
+    right: 0;
   }
-  main #Home h2 {
-    font-size: 30px;
+  aside #navMobile ul {
+    padding-left: 0;
   }
-  main #Experiences section {
-    flex-direction: column;
-    align-items: center;
+  aside #navMobile ul li {
+    list-style-type: none;
   }
-  main #Experiences section div {
-    width: 30%;
+  aside #navMobile ul li a {
+    color: white;
+    text-decoration: none;
   }
-  main #Projects img, main #Stage img {
-    width: 80%;
+  aside #navMobile ul li a:hover {
+    color: white;
+    text-decoration: none;
   }
-  main #Projects p, main #Stage p {
-    margin: 5% 10%;
+  aside #navMobile ul li a:visited {
+    color: white;
+    text-decoration: none;
   }
+}
+main {
+  /* EXPERIENCES */
+  /* PROJETS & STAGE */
+}
+main #Home img {
+  width: 75%;
+}
+main #Home h2 {
+  font-size: 30px;
+}
+main #Experiences section {
+  flex-direction: column;
+  align-items: center;
+}
+main #Experiences section div {
+  width: 30%;
+}
+main #Projects img, main #Stage img {
+  width: 75%;
+}
+main #Projects p, main #Stage p {
+  margin: 5% 10%;
 }

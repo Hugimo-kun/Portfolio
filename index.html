@@ -82,32 +82,37 @@
           />
         </g>
       </svg>
-      <nav>
+      <nav id="navPC">
         <a href="#Home">Accueil</a>
         <a href="#Experiences">Expériences</a>
         <a href="#Projects">Projets</a>
         <a href="#Stage">Stage</a>
         <a href="#Contact">Contact</a>
       </nav>
-      <button class="hamburger hamburger--vortex" type="button">
-        <span class="hamburger-box">
+      <button
+        class="hamburger hamburger--vortex"
+        type="button"
+        onclick="toggleAside()"
+      >
+        <span class="hamburger-box" id="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
     </header>
 
+    <aside id="aside">
+      <nav id="navMobile">
+        <ul>
+          <li><a href="#Home">Accueil</a></li>
+          <li><a href="#Experiences">Expériences</a></li>
+          <li><a href="#Projects">Projets</a></li>
+          <li><a href="#Stage">Stage</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
     <main>
-      <aside>
-        <nav>
-          <ul>
-            <li><a href="#Home">Accueil</a></li>
-            <li><a href="#Experiences">Expériences</a></li>
-            <li><a href="#Projects">Projets</a></li>
-            <li><a href="#Stage">Stage</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
-      </aside>
       <section id="Home">
         <img src="imgs/pdp_manga.webp" alt="Avatar Hugo Simoneau" />
         <h1>Hugo Simoneau</h1>
