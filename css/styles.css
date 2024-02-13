@@ -226,20 +226,20 @@ footer form #Button {
     display: none;
   }
 
-  main #Home h2 {
+  main {
     font-size: 30px;
   }
-
   main #Experiences section {
     flex-direction: column;
     align-items: center;
   }
-
   main #Experiences section div {
     width: 30%;
   }
-
   main #Projects img {
+    width: 90%;
+  }
+  main #Stage img {
     width: 90%;
   }
 }
