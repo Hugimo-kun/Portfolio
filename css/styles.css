@@ -251,6 +251,7 @@ footer form #Button {
   aside {
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     width: 50%;
     height: 100%;
     margin-top: -5%;
@@ -259,10 +260,15 @@ footer form #Button {
     right: 0;
   }
   aside #navMobile ul {
+    height: 75vh;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   aside #navMobile ul li {
     list-style-type: none;
+    padding: 2vh;
   }
   aside #navMobile ul li a {
     color: white;
