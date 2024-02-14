@@ -256,27 +256,28 @@ footer form #Button {
     color: white;
     text-decoration: none;
   }
-}
-main {
+
+  main #Home img {
+    width: 75%;
+  }
+  main #Home h2 {
+    font-size: 30px;
+  }
+
   /* EXPERIENCES */
+  #Experiences section {
+    flex-direction: column;
+    align-items: center;
+  }
+  #Experiences section div {
+    width: 30%;
+  }
+
   /* PROJETS & STAGE */
-}
-main #Home img {
-  width: 75%;
-}
-main #Home h2 {
-  font-size: 30px;
-}
-main #Experiences section {
-  flex-direction: column;
-  align-items: center;
-}
-main #Experiences section div {
-  width: 30%;
-}
-main #Projects img, main #Stage img {
-  width: 75%;
-}
-main #Projects p, main #Stage p {
-  margin: 5% 10%;
+  #Projects img, #Stage img {
+    width: 75%;
+  }
+  #Projects p, #Stage p {
+    margin: 5% 10%;
+  }
 }
