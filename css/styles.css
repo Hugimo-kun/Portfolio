@@ -33,7 +33,6 @@ header {
   padding: 15px 0;
   height: 75px;
   width: 100%;
-  /* HOME */
 }
 header svg {
   width: 5em;
@@ -49,6 +48,11 @@ header nav {
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+aside {
+  display: none;
+  /* HOME */
 }
 
 main #Home {
