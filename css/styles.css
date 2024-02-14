@@ -152,12 +152,13 @@ main #Stage div {
   margin-top: -10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 50%;
 }
 main #Stage div #MoneyStage {
   color: #15ff00;
   font-weight: bold;
   font-size: 20px;
-  padding: 10px;
+  padding: 2%;
   border: 2px solid red;
   border-radius: 15px;
   animation: pulse 3s ease infinite;
@@ -276,27 +277,27 @@ footer form #Button {
     text-decoration: none;
   }
 
+  main {
+    /* EXPERIENCES */
+    /* PROJETS & STAGE */
+  }
   main #Home img {
     width: 75%;
   }
   main #Home h2 {
     font-size: 30px;
   }
-
-  /* EXPERIENCES */
-  #Experiences section {
+  main #Experiences section {
     flex-direction: column;
     align-items: center;
   }
-  #Experiences section div {
+  main #Experiences section div {
     width: 30%;
   }
-
-  /* PROJETS & STAGE */
-  #Projects img, #Stage img {
+  main #Projects img, main #Stage img {
     width: 75%;
   }
-  #Projects p, #Stage p {
+  main #Projects p, main #Stage p {
     margin: 5% 10%;
   }
 }
