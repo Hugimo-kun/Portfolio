@@ -1,1 +1,1 @@
-"use strict";var hamburger=document.querySelector(".hamburger");function toggleAside(){var e=document.getElementById("aside");"block"===e.style.display?e.style.display="none":e.style.display="block"}hamburger.addEventListener("click",function(){hamburger.classList.toggle("is-active")});
+"use strict";var hamburger=document.querySelector(".hamburger");function toggleAside(){document.querySelector("aside").classList.toggle("is-out")}hamburger.addEventListener("click",function(){hamburger.classList.toggle("is-active")});

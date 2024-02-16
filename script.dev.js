@@ -9,11 +9,5 @@ hamburger.addEventListener("click", function () {
 });
 
 function toggleAside() {
-  var x = document.getElementById("aside");
-
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+  document.querySelector("aside").classList.toggle("is-out");
 }

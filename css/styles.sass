@@ -169,6 +169,8 @@ main #Stage
     padding: 30px 0
 
   div 
+    display: flex
+    flex-direction: column
     margin-top: -10px
     padding-top: 20px
     padding-bottom: 20px
@@ -177,17 +179,19 @@ main #Stage
       color: #15ff00
       font-weight: bold
       font-size: 20px
-      padding: 2%
+      padding: 2% 1%
       border: 2px solid red
       border-radius: 15px
       animation: pulse 3s ease infinite
+      width: 75%
+      align-self: center
       
 @keyframes pulse
   0%
     transform: scale(1)
   
   50%
-    transform: scale(1.5)
+    transform: scale(1.1)
   
   100%
     transform: scale(1)
@@ -256,16 +260,17 @@ footer
   /* HOME */ 
 
   aside
-    display: none
+    display: block
     background-color: $header-bg-color
     backdrop-filter: blur(10px)
-    width: 50%
+    width: 0
     height: 100%
-    margin-top: -5%
+    z-index: 3
     position: fixed
-    top: 124px
     right: 0
-
+    transition: 0.35s
+    overflow: hidden
+  
     #navMobile
       ul
         height: 75vh
@@ -285,6 +290,9 @@ footer
             &:visited
               color: white
               text-decoration: none
+  aside.is-out
+    width: 50%
+  
   main
     #Home
       img
@@ -302,8 +310,12 @@ footer
 
     /* PROJETS & STAGE */
 
-    #Projects, #Stage
+    #Stage
       img
-        width: 75%
+        width: 90%
+      p
+        margin: 5% 10%
+    #Projects
+      width: 100%
       p
         margin: 5% 10%
