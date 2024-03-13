@@ -55,6 +55,29 @@ aside {
   /* HOME */
 }
 
+main .sectionpopup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+main .popup {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  max-width: 80%;
+  position: fixed;
+}
+main .popup-content {
+  width: 100%;
+}
+main .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
 main #Home {
   display: flex;
   flex-direction: column;
@@ -82,28 +105,28 @@ main #Experiences {
   margin-top: -130px;
   margin-bottom: 100px;
 }
-main section {
+main #Experiences section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main h2 {
+main #Experiences h2 {
   padding-bottom: 40px;
 }
-main section div {
+main #Experiences section div {
   padding: 30px;
   margin: 10px;
   text-align: center;
   width: 20%;
   border-radius: 15px;
 }
-main section div:nth-child(1) {
+main #Experiences section div:nth-child(1) {
   border: 3px solid #15ff00;
 }
-main section div:nth-child(2) {
+main #Experiences section div:nth-child(2) {
   border: 3px solid #0099ff;
 }
-main section div:nth-child(3) {
+main #Experiences section div:nth-child(3) {
   border: 3px solid red;
 }
 
@@ -131,6 +154,9 @@ main #Projects #AllProjects section img {
   width: 90%;
   object-fit: cover;
 }
+main #Projects #AllProjects section img.ImgCollectiveProject {
+  cursor: pointer;
+}
 main #Projects #AllProjects section #Date {
   font-style: italic;
 }
@@ -157,7 +183,7 @@ main #Stage div {
   width: 50%;
 }
 main #Stage div #MoneyStage {
-  color: #15ff00;
+  color: #e8bc1c;
   font-weight: bold;
   font-size: 20px;
   padding: 2% 1%;
@@ -307,7 +333,7 @@ footer form #Button {
     align-items: center;
   }
   main #Experiences section div {
-    width: 30%;
+    width: 50%;
   }
   main #Stage img {
     width: 90%;

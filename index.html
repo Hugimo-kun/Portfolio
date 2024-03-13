@@ -20,7 +20,7 @@
     <link href="dist/hamburgers.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="body">
     <header>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -113,6 +113,17 @@
     </aside>
 
     <main>
+      <section class="sectionpopup" id="sectionpopup">
+        <div class="popup" id="popup">
+          <span class="close" id="close">&times;</span>
+          <img
+            src="imgs/projet-collectifv2.webp"
+            alt="Site Projet Collectif : Mission Présentation"
+            class="popup-content"
+          />
+        </div>
+      </section>
+
       <section id="Home">
         <img src="imgs/pdp_manga.webp" alt="Avatar Hugo Simoneau" />
         <h1>Hugo Simoneau</h1>
@@ -152,8 +163,10 @@
           <section id="FirstProject">
             <h3>Projets Collectif : Mission Présentation</h3>
             <img
-              src="imgs/projet-collectif.webp"
+              src="imgs/projet-collectifv2.webp"
               alt="Site Projet Collectif : Mission Présentation"
+              id="popupImg"
+              class="ImgCollectiveProject"
             />
             <p id="Date">Décembre 2023</p>
             <p>
@@ -176,7 +189,7 @@
 
       <section id="Stage">
         <h2>Stage</h2>
-        <img src="imgs/web.png" alt="Calendrier du stage" />
+        <img src="imgs/Calendrier.webp" alt="Calendrier du stage" />
         <p id="TextStage">
           Actuellement en recherche de stage, je cherche un stage qui dure du 04
           septembre 2024 au 31 octobre 2024.<br />
