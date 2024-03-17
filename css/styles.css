@@ -160,6 +160,9 @@ main #Projects #AllProjects section img.ImgCollectiveProject {
 main #Projects #AllProjects section #Date {
   font-style: italic;
 }
+main #Projects #AllProjectsMobile {
+  display: none;
+}
 
 /* STAGE */
 main #Stage {
@@ -171,7 +174,7 @@ main #Stage {
   text-align: center;
 }
 main #Stage img {
-  width: 45%;
+  width: 55%;
   padding: 30px 0;
 }
 main #Stage div {
@@ -181,6 +184,10 @@ main #Stage div {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 50%;
+}
+main #Stage div img {
+  width: 55%;
+  padding: 30px 0;
 }
 main #Stage div #MoneyStage {
   color: #e8bc1c;
@@ -335,16 +342,34 @@ footer form #Button {
   main #Experiences section div {
     width: 50%;
   }
-  main #Stage img {
-    width: 90%;
+  main #Projects #AllProjects {
+    display: none;
   }
-  main #Stage p {
-    margin: 5% 10%;
-  }
-  main #Projects {
+  main #Projects #AllProjectsMobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    text-align: center;
     width: 100%;
   }
-  main #Projects p {
+  main #Projects #AllProjectsMobile section {
+    width: 380px;
+  }
+  main #Projects #AllProjectsMobile section img {
+    width: 90%;
+    object-fit: cover;
+  }
+  main #Projects #AllProjectsMobile section #Date {
+    font-style: italic;
+  }
+  main #Projects #AllProjectsMobile section p {
+    margin: 5% 10%;
+  }
+  main #Stage img {
+    width: 130%;
+  }
+  main #Stage p {
     margin: 5% 10%;
   }
 }

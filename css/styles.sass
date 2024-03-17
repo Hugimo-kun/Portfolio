@@ -180,6 +180,9 @@ main #Projects
 
       #Date
         font-style: italic
+  
+  #AllProjectsMobile
+    display: none
 
 /* STAGE */
 main #Stage
@@ -191,7 +194,7 @@ main #Stage
   text-align: center
 
   img
-    width: 45%
+    width: 55%
     padding: 30px 0
 
   div 
@@ -201,6 +204,11 @@ main #Stage
     padding-top: 20px
     padding-bottom: 20px
     width: 50%
+
+    img
+      width: 55%
+      padding: 30px 0
+
     #MoneyStage
       color: #e8bc1c
       font-weight: bold
@@ -335,13 +343,32 @@ footer
           width: 50%
 
     /* PROJETS & STAGE */
+    #Projects
+      #AllProjects
+        display: none
+
+      #AllProjectsMobile
+        display: flex
+        justify-content: space-evenly
+        align-items: first baseline
+        flex-wrap: wrap
+        text-align: center
+        width: 100%
+
+        section
+          width: 380px
+
+          img
+            width: 90%
+            object-fit: cover
+
+          #Date
+            font-style: italic
+          p
+            margin: 5% 10%
 
     #Stage
       img
-        width: 90%
-      p
-        margin: 5% 10%
-    #Projects
-      width: 100%
+        width: 130%
       p
         margin: 5% 10%
